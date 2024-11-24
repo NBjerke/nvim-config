@@ -86,4 +86,7 @@ M.rand_colorscheme = function()
 end
 
 -- Load a random colorscheme
-M.rand_colorscheme()
+--M.rand_colorscheme()
+-- Load static colorscheme
+M.colorscheme_conf["nightfox"]()
+

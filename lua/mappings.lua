@@ -17,11 +17,21 @@ keymap.set("n", "<leader>P", "m`O<ESC>p``", { desc = "paste above current line" 
 -- Shortcut for faster save and quit
 keymap.set("n", "<leader>w", "<cmd>update<cr>", { silent = true, desc = "save buffer" })
 
+-- NBJ Custom commands:
+-- Rezise:
+keymap.set('n', '<a-h>', ':vertical resize -5<CR>', opts)
+keymap.set('n', '<a-j>', ':resize +5<CR>', opts)
+keymap.set('n', '<a-k>', ':resize -5<CR>', opts)
+keymap.set('n', '<a-l>', ':vertical resize +5<CR>', opts)
+
+-- Toggle file browser:
+keymap.set('n', '<leader>q', ':NvimTreeToggle<CR>', opts)
+
 -- Saves the file if modified and quit
-keymap.set("n", "<leader>q", "<cmd>x<cr>", { silent = true, desc = "quit current window" })
+-- keymap.set("n", "<leader>q", "<cmd>x<cr>", { silent = true, desc = "quit current window" })
 
 -- Quit all opened buffers
-keymap.set("n", "<leader>Q", "<cmd>qa!<cr>", { silent = true, desc = "quit nvim" })
+-- keymap.set("n", "<leader>Q", "<cmd>qa!<cr>", { silent = true, desc = "quit nvim" })
 
 -- Navigation in the location and quickfix list
 keymap.set("n", "[l", "<cmd>lprevious<cr>zv", { silent = true, desc = "previous location item" })
@@ -249,3 +259,9 @@ keymap.set("n", "<leader>cb", function()
     end)
   )
 end, { desc = "show cursor" })
+
+
+
+
+
+

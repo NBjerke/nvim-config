@@ -21,6 +21,14 @@ local firenvim_not_active = function()
 end
 
 local plugin_specs = {
+  { 'rust-lang/rust.vim' },
+  { 'williamboman/mason.nvim' },
+  { 'williamboman/mason-lspconfig.nvim' },
+  {
+    'mrcjkb/rustaceanvim',
+    version = '^3',
+    ft = { 'rust' },
+  },
   -- auto-completion engine
   {
     "iguanacucumber/magazine.nvim",
