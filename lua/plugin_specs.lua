@@ -26,7 +26,6 @@ local plugin_specs = {
   { 'williamboman/mason-lspconfig.nvim' },
   {
     'mrcjkb/rustaceanvim',
-    version = '^3',
     ft = { 'rust' },
   },
   -- auto-completion engine
